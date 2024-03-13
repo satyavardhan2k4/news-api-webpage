@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nstyle.css">
+  <title>news website</title>
+  
+
+
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="main-navbar container flex">
+
+      <a href="#" onclick="reload()" class="logo">
+        <img src="PROJECT.jpg" height="75" width="75" alt="logo">
+      </a>
+
+      <div class="navbar-links">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="science" onclick="onNavItemClick('science')">Science</li>
+          <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+          <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+        </ul>
+      </div>
+
+      <div class="search-bar flex">
+        <input id="search-text"type="text" class="news-input" placeholder="ex:- sports">
+        <button id="search-button" class="search-button" >search</button>
+      </div>
+
+    
+      <div class="more">
+        <button type="submit" id="dark_mode_btn" onclick="changetheme()">
+          <img src="icons8-dark-mode-30.png" alt="buttonpng" />
+        </button>
+      </div>
+        
+
+      
+    </div>
+
+  </nav>
+
+
+  <main>
+    <div class="card-container container flex" id="card-container"> <!-- here we will add our article to be displayed-->
+      
+      
+
+    </div>
+
+    
+
+  </main>
+
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+      </div>
+
+
+      <div class="card-content">
+        <h3 id="news-title">this is title of the news</h3>
+        <h6 class="news-source" id="news-source">end gadget 22/11/23</h6>
+
+        <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequuntur, asperiores ullam ducimus architecto exercitationem voluptas sed sit voluptatum tempore neque dolore, dolorem praesentium beatae, vero eaque dolores quod consectetur?</p>
+      </div>
+
+
+    </div>
+
+  </template>
+    
+
+
+</body>
+<script src="njs.js"> </script>
+</html>

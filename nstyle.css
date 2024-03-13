@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");/*importing fonts from google fonts*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk",sans-serif;
+}
+
+
+:root{
+
+    --primary-text-color :#183b56;
+    --secondary-text-color: #577593;
+    --accent-color: #2294ed;
+    --accent-color-dark:#1d69a3;
+    --dark-background:#0b0c10;
+    --light-dark-bg:#1f2833;
+    --pop-orange:#ff652f;
+    --other-dark-background:#222629;
+  
+}
+
+
+body{
+    /* font-family: "Space Grotesk",sans-serif; */
+    color: var(--primary-text-color);
+   
+}
+
+
+p{
+    
+    /* font-family: "Space Grotesk",sans-serif; */
+    color :var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+
+.flex{
+    display: felx;
+    align-items: center;
+}
+
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #ffa53e;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.nav-item.active{
+    color: red;
+}
+
+
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 1700px;
+    padding-block: 0px;
+}
+
+
+.logo img{
+    width: 120px;
+}
+
+ul.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-links ul{
+    gap: 16px;
+
+}
+
+.hover-link{
+    cursor: pointer;
+
+}
+
+.hover-link:hover{
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active{
+    color: red;
+}
+
+.search-bar{
+    height:32px;
+    gap:0px;
+
+}
+
+.news-input{
+    width: 200px;
+    height:100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border :2px solid #bbd0e2;
+}
+
+.search-button{
+    background-color:#ffa53e;
+    color:white;
+    padding: 8px 24px;
+    border: 1px black;
+    border-style: ridge;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+
+}
+
+
+
+main{
+    padding-block: 40px;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.card-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+    display:flex;
+}/* display:flex will make all the items inside it flexible making the cards display side by side as u wished*/
+
+
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px rgb(204, 231, 147);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    
+}
+
+
+.card:hover{
+    box-shadow: 1px 1px 80px red;
+    background-color: #fdfdff;
+    transform: translateY(-3px);
+    /* transform: translateX(-2px); */
+}
+
+.card-header img{
+    width:100%;
+    height: 180px;
+    object-fit: cover;
+    /*try later with contain */
+}
+
+.card-content{
+    padding: 20px;
+}
+
+.news-source{
+    margin-block: 12px;
+}
+
+.dark-mode{                       /*this is to switch between ligth and dark mode as we change the class of the body*/
+    background-color: #0b0c10;
+}
+
+.light-mode{
+    background-color: #fefeff;
+}
+
+
+
+
